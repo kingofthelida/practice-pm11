@@ -1,0 +1,155 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="FJIXgdYhen0d3WMWmBqJ">
+    <mxGraphModel dx="1475" dy="823" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" mermaidData="{&#xa;  &quot;data&quot;: &quot;classDiagram\nclass Клиент {\n+int idКлиента\n+String ФИО\n+String телефон\n}\n\nclass Автомобиль {\n+int idАвтомобиля\n+String марка\n+String модель\n+String госномер\n}\n\nclass Заказ {\n+int idЗаказа\n+Date дата\n+double стоимость\n+String статус\n}\n\nclass Услуга {\n+int idУслуги\n+String название\n+double цена\n}\n\nclass Сотрудник {\n+int idСотрудника\n+String ФИО\n+String должность\n}\n\nКлиент \&quot;1\&quot; --&gt; \&quot;*\&quot; Автомобиль : владеет\nКлиент \&quot;1\&quot; --&gt; \&quot;*\&quot; Заказ : оформляет\nАвтомобиль \&quot;1\&quot; --&gt; \&quot;*\&quot; Заказ : обслуживается\nЗаказ \&quot;*\&quot; --&gt; \&quot;*\&quot; Услуга : включает\nСотрудник \&quot;1\&quot; --&gt; \&quot;*\&quot; Заказ : выполняет\n&quot;,&#xa;  &quot;config&quot;: null,&#xa;  &quot;version&quot;: &quot;12&quot;&#xa;}" id="iw4ecZ1aWL6anazbeBm0-48">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;fillColor=none;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;Клиент&lt;/b&gt;" mermaidId="n:Клиент" mermaidBaseStyle="swimlane;html=1;fontStyle=1;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=45;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=#FDF4FF;whiteSpace=wrap;fillColor=#FDF4FF;strokeColor=#E879F9;fontColor=#28253D;fontFamily=Recursive;strokeWidth=2;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="&lt;b&gt;Клиент&lt;/b&gt;" id="iw4ecZ1aWL6anazbeBm0-49">
+          <mxCell parent="iw4ecZ1aWL6anazbeBm0-48" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=45;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=#FDF4FF;whiteSpace=wrap;fillColor=none;fontFamily=Recursive;strokeWidth=2;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="156" width="151" x="185" y="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="iw4ecZ1aWL6anazbeBm0-50" parent="iw4ecZ1aWL6anazbeBm0-49" style="text;fontSize=14;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Recursive;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" value="+int idКлиента" vertex="1">
+          <mxGeometry height="21" width="151" y="57" as="geometry" />
+        </mxCell>
+        <mxCell id="iw4ecZ1aWL6anazbeBm0-51" parent="iw4ecZ1aWL6anazbeBm0-49" style="text;fontSize=14;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Recursive;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" value="+String ФИО" vertex="1">
+          <mxGeometry height="21" width="151" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="iw4ecZ1aWL6anazbeBm0-52" parent="iw4ecZ1aWL6anazbeBm0-49" style="text;fontSize=14;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Recursive;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" value="+String телефон" vertex="1">
+          <mxGeometry height="21" width="151" y="99" as="geometry" />
+        </mxCell>
+        <mxCell id="iw4ecZ1aWL6anazbeBm0-53" parent="iw4ecZ1aWL6anazbeBm0-49" style="line;strokeWidth=2;spacingLeft=3;spacingRight=3;rotatable=0;points=[];fillColor=none;" vertex="1">
+          <mxGeometry height="24" width="151" y="120" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;b&gt;Автомобиль&lt;/b&gt;" mermaidId="n:Автомобиль" mermaidBaseStyle="swimlane;html=1;fontStyle=1;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=45;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=#F0FDFA;whiteSpace=wrap;fillColor=#F0FDFA;strokeColor=#2DD4BF;fontColor=#28253D;fontFamily=Recursive;strokeWidth=2;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="&lt;b&gt;Автомобиль&lt;/b&gt;" id="iw4ecZ1aWL6anazbeBm0-54">
+          <mxCell parent="iw4ecZ1aWL6anazbeBm0-48" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=45;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=#F0FDFA;whiteSpace=wrap;fillColor=none;fontFamily=Recursive;strokeWidth=2;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="177" width="180" x="90" y="297" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="iw4ecZ1aWL6anazbeBm0-55" parent="iw4ecZ1aWL6anazbeBm0-54" style="text;fontSize=14;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Recursive;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" value="+int idАвтомобиля" vertex="1">
+          <mxGeometry height="21" width="180" y="57" as="geometry" />
+        </mxCell>
+        <mxCell id="iw4ecZ1aWL6anazbeBm0-56" parent="iw4ecZ1aWL6anazbeBm0-54" style="text;fontSize=14;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Recursive;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" value="+String марка" vertex="1">
+          <mxGeometry height="21" width="180" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="iw4ecZ1aWL6anazbeBm0-57" parent="iw4ecZ1aWL6anazbeBm0-54" style="text;fontSize=14;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Recursive;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" value="+String модель" vertex="1">
+          <mxGeometry height="21" width="180" y="99" as="geometry" />
+        </mxCell>
+        <mxCell id="iw4ecZ1aWL6anazbeBm0-58" parent="iw4ecZ1aWL6anazbeBm0-54" style="text;fontSize=14;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Recursive;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" value="+String госномер" vertex="1">
+          <mxGeometry height="21" width="180" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="iw4ecZ1aWL6anazbeBm0-59" parent="iw4ecZ1aWL6anazbeBm0-54" style="line;strokeWidth=2;fillColor=none;spacingLeft=3;spacingRight=3;rotatable=0;points=[];" vertex="1">
+          <mxGeometry height="24" width="180" y="141" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;b&gt;Заказ&lt;/b&gt;" mermaidId="n:Заказ" mermaidBaseStyle="swimlane;html=1;fontStyle=1;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=45;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=#FFF7ED;whiteSpace=wrap;fillColor=#FFF7ED;strokeColor=#FB923C;fontColor=#28253D;fontFamily=Recursive;strokeWidth=2;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="&lt;b&gt;Заказ&lt;/b&gt;" id="iw4ecZ1aWL6anazbeBm0-60">
+          <mxCell parent="iw4ecZ1aWL6anazbeBm0-48" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=45;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=#FFF7ED;whiteSpace=wrap;fontFamily=Recursive;strokeWidth=2;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fillColor=none;" vertex="1">
+            <mxGeometry height="177" width="161" x="261" y="575" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="iw4ecZ1aWL6anazbeBm0-61" parent="iw4ecZ1aWL6anazbeBm0-60" style="text;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Recursive;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fillColor=none;" value="+int idЗаказа" vertex="1">
+          <mxGeometry height="21" width="161" y="57" as="geometry" />
+        </mxCell>
+        <mxCell id="iw4ecZ1aWL6anazbeBm0-62" parent="iw4ecZ1aWL6anazbeBm0-60" style="text;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Recursive;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fillColor=none;" value="+Date дата" vertex="1">
+          <mxGeometry height="21" width="161" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="iw4ecZ1aWL6anazbeBm0-63" parent="iw4ecZ1aWL6anazbeBm0-60" style="text;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Recursive;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fillColor=none;" value="+double стоимость" vertex="1">
+          <mxGeometry height="21" width="161" y="99" as="geometry" />
+        </mxCell>
+        <mxCell id="iw4ecZ1aWL6anazbeBm0-64" parent="iw4ecZ1aWL6anazbeBm0-60" style="text;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Recursive;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fillColor=none;" value="+String статус" vertex="1">
+          <mxGeometry height="21" width="161" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="iw4ecZ1aWL6anazbeBm0-65" parent="iw4ecZ1aWL6anazbeBm0-60" style="line;strokeWidth=2;spacingLeft=3;spacingRight=3;rotatable=0;points=[];fillColor=none;" vertex="1">
+          <mxGeometry height="24" width="161" y="141" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;b&gt;Услуга&lt;/b&gt;" mermaidId="n:Услуга" mermaidBaseStyle="swimlane;html=1;fontStyle=1;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=45;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=#ECFEFF;whiteSpace=wrap;fillColor=#ECFEFF;strokeColor=#22D3EE;fontColor=#28253D;fontFamily=Recursive;strokeWidth=2;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="&lt;b&gt;Услуга&lt;/b&gt;" id="iw4ecZ1aWL6anazbeBm0-66">
+          <mxCell parent="iw4ecZ1aWL6anazbeBm0-48" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=45;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=#ECFEFF;whiteSpace=wrap;fillColor=none;fontFamily=Recursive;strokeWidth=2;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="156" width="153" x="265" y="853" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="iw4ecZ1aWL6anazbeBm0-67" parent="iw4ecZ1aWL6anazbeBm0-66" style="text;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Recursive;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fillColor=none;" value="+int idУслуги" vertex="1">
+          <mxGeometry height="21" width="153" y="57" as="geometry" />
+        </mxCell>
+        <mxCell id="iw4ecZ1aWL6anazbeBm0-68" parent="iw4ecZ1aWL6anazbeBm0-66" style="text;fontSize=14;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Recursive;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" value="+String название" vertex="1">
+          <mxGeometry height="21" width="153" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="iw4ecZ1aWL6anazbeBm0-69" parent="iw4ecZ1aWL6anazbeBm0-66" style="text;fontSize=14;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Recursive;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" value="+double цена" vertex="1">
+          <mxGeometry height="21" width="153" y="99" as="geometry" />
+        </mxCell>
+        <mxCell id="iw4ecZ1aWL6anazbeBm0-70" parent="iw4ecZ1aWL6anazbeBm0-66" style="line;strokeWidth=2;fillColor=none;spacingLeft=3;spacingRight=3;rotatable=0;points=[];" vertex="1">
+          <mxGeometry height="24" width="153" y="120" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;b&gt;Сотрудник&lt;/b&gt;" mermaidId="n:Сотрудник" mermaidBaseStyle="swimlane;html=1;fontStyle=1;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=45;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=#F0FDF4;whiteSpace=wrap;fillColor=#F0FDF4;strokeColor=#4ADE80;fontColor=#28253D;fontFamily=Recursive;strokeWidth=2;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="&lt;b&gt;Сотрудник&lt;/b&gt;" id="iw4ecZ1aWL6anazbeBm0-71">
+          <mxCell parent="iw4ecZ1aWL6anazbeBm0-48" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=45;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=#F0FDF4;whiteSpace=wrap;fontFamily=Recursive;strokeWidth=2;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fillColor=none;" vertex="1">
+            <mxGeometry height="156" width="176" x="414" y="318" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="iw4ecZ1aWL6anazbeBm0-72" parent="iw4ecZ1aWL6anazbeBm0-71" style="text;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Recursive;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fillColor=none;" value="+int idСотрудника" vertex="1">
+          <mxGeometry height="21" width="176" y="57" as="geometry" />
+        </mxCell>
+        <mxCell id="iw4ecZ1aWL6anazbeBm0-73" parent="iw4ecZ1aWL6anazbeBm0-71" style="text;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Recursive;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fillColor=none;" value="+String ФИО" vertex="1">
+          <mxGeometry height="21" width="176" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="iw4ecZ1aWL6anazbeBm0-74" parent="iw4ecZ1aWL6anazbeBm0-71" style="text;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Recursive;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fillColor=none;" value="+String должность" vertex="1">
+          <mxGeometry height="21" width="176" y="99" as="geometry" />
+        </mxCell>
+        <mxCell id="iw4ecZ1aWL6anazbeBm0-75" parent="iw4ecZ1aWL6anazbeBm0-71" style="line;strokeWidth=2;spacingLeft=3;spacingRight=3;rotatable=0;points=[];fillColor=none;" vertex="1">
+          <mxGeometry height="24" width="176" y="120" as="geometry" />
+        </mxCell>
+        <UserObject label="владеет" mermaidId="e:Клиент-&gt;Автомобиль#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=classic;endSize=9;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=16;labelBackgroundColor=#ffffff;fontFamily=Recursive;fontColor=#28253D;exitX=0.36;exitY=1;entryX=0.5;entryY=0;strokeWidth=2;" mermaidBaseValue="владеет" id="iw4ecZ1aWL6anazbeBm0-76">
+          <mxCell edge="1" parent="iw4ecZ1aWL6anazbeBm0-48" source="iw4ecZ1aWL6anazbeBm0-49" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=classic;endSize=9;jumpStyle=arc;jumpSize=12;html=1;fontSize=14;labelBackgroundColor=#ffffff;fontFamily=Recursive;fontColor=#28253D;exitX=0.36;exitY=1;entryX=0.5;entryY=0;strokeWidth=2;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fillColor=none;" target="iw4ecZ1aWL6anazbeBm0-54">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="239" y="216" />
+                <mxPoint x="180" y="216" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="оформляет" mermaidId="e:Клиент-&gt;Заказ#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=classic;endSize=9;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=16;labelBackgroundColor=#ffffff;fontFamily=Recursive;fontColor=#28253D;exitX=0.65;exitY=1;entryX=0.5;entryY=0;strokeWidth=2;" mermaidBaseValue="оформляет" id="iw4ecZ1aWL6anazbeBm0-79">
+          <mxCell edge="1" parent="iw4ecZ1aWL6anazbeBm0-48" source="iw4ecZ1aWL6anazbeBm0-49" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=classic;endSize=9;jumpStyle=arc;jumpSize=12;html=1;fontSize=14;labelBackgroundColor=#ffffff;fontFamily=Recursive;fontColor=#28253D;exitX=0.65;exitY=1;entryX=0.5;entryY=0;strokeWidth=2;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fillColor=none;" target="iw4ecZ1aWL6anazbeBm0-60">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="282" y="216" />
+                <mxPoint x="342" y="216" />
+                <mxPoint x="342" y="247" />
+                <mxPoint x="342" y="525" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="обслуживается" mermaidId="e:Автомобиль-&gt;Заказ#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=classic;endSize=9;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=16;labelBackgroundColor=#ffffff;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.28;entryY=0;strokeWidth=2;" mermaidBaseValue="обслуживается" id="iw4ecZ1aWL6anazbeBm0-82">
+          <mxCell edge="1" parent="iw4ecZ1aWL6anazbeBm0-48" source="iw4ecZ1aWL6anazbeBm0-54" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=classic;endSize=9;jumpStyle=arc;jumpSize=12;html=1;fontSize=14;labelBackgroundColor=#ffffff;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.28;entryY=0;strokeWidth=2;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fillColor=none;" target="iw4ecZ1aWL6anazbeBm0-60">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="180" y="555" />
+                <mxPoint x="306" y="555" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="включает" mermaidId="e:Заказ-&gt;Услуга#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=classic;endSize=9;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=16;labelBackgroundColor=#ffffff;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeWidth=2;" mermaidBaseValue="включает" id="iw4ecZ1aWL6anazbeBm0-85">
+          <mxCell edge="1" parent="iw4ecZ1aWL6anazbeBm0-48" source="iw4ecZ1aWL6anazbeBm0-60" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=classic;endSize=9;jumpStyle=arc;jumpSize=12;html=1;fontSize=14;labelBackgroundColor=#ffffff;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeWidth=2;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fillColor=none;" target="iw4ecZ1aWL6anazbeBm0-66">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="выполняет" mermaidId="e:Сотрудник-&gt;Заказ#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=classic;endSize=9;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=16;labelBackgroundColor=#ffffff;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.72;entryY=0;strokeWidth=2;" mermaidBaseValue="выполняет" id="iw4ecZ1aWL6anazbeBm0-88">
+          <mxCell edge="1" parent="iw4ecZ1aWL6anazbeBm0-48" source="iw4ecZ1aWL6anazbeBm0-71" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=classic;endSize=9;jumpStyle=arc;jumpSize=12;html=1;fontSize=14;labelBackgroundColor=#ffffff;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.72;entryY=0;strokeWidth=2;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fillColor=none;" target="iw4ecZ1aWL6anazbeBm0-60">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="502" y="555" />
+                <mxPoint x="377" y="555" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
