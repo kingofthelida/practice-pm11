@@ -1,0 +1,67 @@
+
+erDiagram
+    SPECIALTIES {
+        INTEGER specialty_id PK
+        TEXT name
+        TEXT description
+    }
+
+    PATIENTS {
+        INTEGER patient_id PK
+        TEXT full_name
+        TEXT birth_date
+        TEXT gender
+        TEXT phone
+        TEXT address
+    }
+
+    DOCTORS {
+        INTEGER doctor_id PK
+        INTEGER specialty_id FK
+        TEXT full_name
+        TEXT phone
+    }
+
+    ROOMS {
+        INTEGER room_id PK
+        TEXT room_number
+        INTEGER floor
+    }
+
+    APPOINTMENTS {
+        INTEGER appointment_id PK
+        INTEGER patient_id FK
+        INTEGER doctor_id FK
+        INTEGER room_id FK
+        TEXT appointment_datetime
+        TEXT status
+        TEXT notes
+    }
+
+    DIAGNOSES {
+        INTEGER diagnosis_id PK
+        TEXT icd_code
+        TEXT name
+        TEXT description
+    }
+
+    APPOINTMENT_DIAGNOSES {
+        INTEGER appointment_id PK, FK
+        INTEGER diagnosis_id PK, FK
+    }
+
+    PRESCRIPTIONS {
+        INTEGER prescription_id PK
+        INTEGER appointment_id FK
+        TEXT medication_name
+        TEXT dosage
+        TEXT instructions
+    }
+
+    SPECIALTIES ||--o{ DOCTORS : has
+    PATIENTS ||--o{ APPOINTMENTS : books
+    DOCTORS ||--o{ APPOINTMENTS : conducts
+    ROOMS ||--o{ APPOINTMENTS : hosts
+    APPOINTMENTS ||--o{ APPOINTMENT_DIAGNOSES : includes
+    DIAGNOSES ||--o{ APPOINTMENT_DIAGNOSES : assigned
+    APPOINTMENTS ||--o{ PRESCRIPTIONS : creates
